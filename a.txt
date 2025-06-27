@@ -1,0 +1,10 @@
+future feateare
+
+different formate of game
+1>time limit (within time limit how much point can take )
+2>level of speed (a normal bar that will change the set interval value )
+3>obsticals (that also move )   -->>(if(head.x==o.x && head.y==o.y)   game over   and obstical will every one sec 20 px up then next sec 20 px down )
+4>some potels to transport from one poin to another  -->>(i can make this if there is one side of potel at (x1,y1) if the head of snake and (x1,y1) is same then head will be set to x2,y2)
+high score 
+
+
