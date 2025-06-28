@@ -1,10 +1,33 @@
-future feateare
+🎮 Game Formats
+Time-Limited Challenge Mode
 
-different formate of game
-1>time limit (within time limit how much point can take )
-2>level of speed (a normal bar that will change the set interval value )
-3>obsticals (that also move )   -->>(if(head.x==o.x && head.y==o.y)   game over   and obstical will every one sec 20 px up then next sec 20 px down )
-4>some potels to transport from one poin to another  -->>(i can make this if there is one side of potel at (x1,y1) if the head of snake and (x1,y1) is same then head will be set to x2,y2)
-high score 
+Select time limit.
 
+Play to maximize score within that time.
 
+Infinite Mode (optional toggle)
+
+No timer; game ends only on collision.
+
+🚀 Gameplay Mechanics
+Speed Slider (Real-Time Control)
+
+Replace dropdown with a speed range slider.
+
+Update setInterval() delay in real time without restarting game.
+
+🪨 Dynamic Obstacles 
+Obstacles
+
+Obstacle path detection using if(head.x === obstacle.x && head.y === obstacle.y) logic.
+
+Speed and direction can vary per obstacle.
+
+🚪 Portals (Teleportation Logic)
+Two-Way Portals
+
+When snake head hits (x1, y1) → instantly teleports to (x2, y2), and vice versa.
+
+Portals are visually styled with glow and color.
+
+Smooth transition with no delay or flicker.

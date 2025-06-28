@@ -1,12 +1,105 @@
-.main{
-    height: 100%;
-    width: 100%;
+/* Reset some default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f1f7ed, #c2e9fb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container */
+.main {
+    width: 90%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2vh;
 }
 
-#gameCanvas{
-    background-color: #d7efda;
-    border: 5px solid black;
+/* Title */
+.main h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+/* Canvas + Score layout */
+.bord {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas */
+#gameCanvas {
+    background-color: #f8fff8;
+    border: 6px solid #2c2c2c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Score Display */
+.score h1, .score h4 {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #2e2e2e;
+    text-align: left;
+}
+
+#scoreDisplay {
+    color: #0d6efd;
+}
+
+#highScoreDisplay {
+    color: #dc3545;
+}
+
+#timer, #speedLevel {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Controls */
+div > input[type="checkbox"], select {
+    margin: 0.5rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#start {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .bord {
+        flex-direction: column;
+    }
+
+    #gameCanvas {
+        width: 90vw;
+        height: 90vw;
+    }
 }

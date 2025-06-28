@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>snake game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="main">
         <h1>Snake Game</h1>
-        <canvas id="gameCanvas" width="400" height="400"></canvas> 
-        <h1 id="scoreDisplay">SCORE : 0</h1>
+
+        <div class="bord">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+            <div class="score">
+                <h1 id="scoreDisplay">SCORE : 0</h1>
+                <h1 id="highScoreDisplay">H SCORE : 0</h1>
+            
+                <h4 id="timer">⏱ Time Left : infinity</h4>
+                <h4 id="speedLevel">speed level : stander</h4>
+            </div>
+
+        </div>
+
+        <div>
+            <input type="checkbox" name="portals" id="portals"> portals
+            <input type="checkbox" name="obstacles" id="obstacles"> Enable Obstacles
+
+            <!-- Dropdown 1 -->
+            <select id="Selectspeed">
+                <option value="">Select speed</option>
+                <option value="100">2x</option>
+                <option value="200">1x</option>
+                <option value="400">0.5x</option>
+            </select>
+
+            <!-- Dropdown 2 -->
+            <select id="timeSelect">
+                <option value="">Select time</option>
+                <option value="60">1 min</option>
+                <option value="30">30 sec</option>
+                <option value="15">15 sec</option>
+            </select>
+        </div>
+
+        <button id="start">start game</button>
+
+
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
